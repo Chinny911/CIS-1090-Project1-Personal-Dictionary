@@ -1,14 +1,21 @@
 //declare an array named words
-let words = [];
+let personalDict = [];
 
-//define functions search and addWord
+//define functions addWord and search
 
-function search(word){
-    
+function addWord(newWord){
+    personalDict.push(newWord);
 }
 
-function addWord(word){
-    
+function search(newWord){
+    if (personalDict.includes(newWord)){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
+
+
 
 export {search, addWord}
